@@ -1,0 +1,528 @@
+/*modify all */
+*{
+	box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+	margin: 0px;
+	padding: 0px;
+	font-family: tahoma;
+    text-transform: uppercase;
+
+}
+.container{
+	margin: auto;
+	width: 80%;
+	
+}
+
+@media (max-width : 1200px){
+	.container{
+		width: 90%;
+	}
+
+}
+@media (max-width : 767px){
+	.container{
+		width: 100%;
+	}
+
+}
+
+/* end modify all */
+
+/* start heading */
+
+/* start slider*/
+.slider {
+	margin: 0px;
+    background-image: url(../img/back.jpg);
+    background-size: cover;
+    height: 959px;
+    padding: 0px;
+
+}
+
+.slider .container{
+text-align: center;
+    position: relative;
+    top: 50%;
+    padding: 0px;
+}
+
+.slider h1{
+	text-transform: capitalize;
+    color: #fff;
+    font-size: 35px;
+    padding: 9px 0px;
+    border-top: 2px solid;
+    width: 507px;
+    margin: 0px auto 45px;
+    border-bottom: 2px solid;
+    font-weight: 550;
+}
+.slider button{
+	background: none;
+    outline: none;
+    border: 2px solid white;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    color: #fff;
+
+}
+.slider button a{
+    text-decoration: none;
+    color: #ffffff;
+}
+/*end slider*/
+/* start nav */
+
+.nav{
+margin: 0px;
+    background: #252f31;
+}
+.nav .container{
+	justify-content: space-between;
+    display: flex;
+}
+
+.nav .logo{
+	background: #5b6769;
+    padding: 2px 10px;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 2px;
+
+}
+.nav .cal{
+color: #28d46c;
+}
+.nav .icon{
+	padding-top: 1em;
+}
+.nav h3{
+display: inline;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-left: 12px;
+}
+
+
+}
+.nav ul{
+	padding-right: 10px;
+	list-style: none;
+}
+.nav ul li{
+	padding: 16px 15px;
+    margin-left: 0px;
+    display: inline;
+}
+
+.nav ul li a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 10px;
+
+}
+.nav ul li a:hover{
+    cursor: pointer;
+    color: #28d46c;
+}
+
+
+/* end nav */
+/*end heading*/
+
+/* start features */
+.features{
+    padding: 60px 0px;
+
+}
+.features .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+    grid-gap: 20px;
+}
+
+.features .feat{
+
+}
+.features .feat h3{
+    color: #595e5e;
+    margin-top: 0px;
+    padding: 0px;
+    margin-bottom: 30px;
+
+}
+.features .feat p{
+    text-transform: none;
+    font-size: 12px;
+    color: #aaaaaa;
+
+}
+
+@media(max-width: 1570px){
+    .features .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .features .feat{
+        padding: 0px 20px;
+    }
+
+}
+
+
+/* end features */
+/* start about me */
+.about_me{
+display: flex;
+    background: #f2f2f2;
+}
+.about_me .photo{
+    background: url(../img/back.jpg);
+    width: 30%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.about_me .container{
+padding: 60px 142px;
+}
+.about_me .contant{
+    padding-right: 20px;
+
+}
+.about_me .contant .text{
+        margin-bottom: 40px;
+
+}
+.about_me .contant .text h2{
+color: #595e5e;
+    margin-top: 0px;
+    padding: 0px;
+    margin-bottom: 30px;
+}
+
+.about_me .contant .text p{
+    line-height: 1.5;
+    text-transform: none;
+    font-size: 15px;
+    color: #aaaaaa;
+}
+
+.about_me .contant .adv{
+grid-gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+
+}
+.about_me .contant .adv .con{
+    margin-bottom: 15px;
+    margin-left: 15px;
+
+}
+.about_me .contant .adv .adv1{
+
+} 
+.about_me .contant .adv .adv2{
+
+}
+.about_me .contant .adv .ad{
+    display: flex;
+
+}
+.about_me .contant .adv .ad i{
+    color: #069e49;
+    padding-top: 4px;
+
+}
+.about_me .contant .adv .ad h3{
+    color: #595e5e;
+    padding: 0px;
+    margin: 0px;
+
+}
+.about_me .contant .adv .ad p{
+line-height: 1.5;
+    text-transform: none;
+    font-size: 15px;
+    color: #aaaaaa;
+}
+
+@media (max-width: 1000px){
+    .about_me .photo{
+        display: none;
+    }
+    .about_me .contant .adv{
+    grid-template-columns: repeat(auto-fill,minmax(281px,1fr));
+    }
+    .about_me .container{
+        padding: 60px 0px;
+    }
+    .about_me .contant{
+        padding-right: 0px;
+
+}
+}
+@media (min-width:1000px){
+.about_me .container{
+        padding: 60px 90px;
+    }
+    .about_me .contant{
+        padding-right: 0px;    
+}
+.about_me .contant .adv{
+    grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
+    }
+}
+@media (min-width:1409px){
+.about_me .container{
+        padding: 60px 142px;
+    }
+    .about_me .contant{
+        padding-right: 20px;    
+}
+.about_me .contant .adv{
+    grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+    }
+}
+/* end about me */
+/* start my skills */
+.my_skills{
+    display: flex;
+}
+.my_skills .container{
+padding: 60px 0px;
+}
+.my_skills .contant{
+    grid-gap: 160px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(509px,1fr));
+}
+.my_skills .skill{
+
+}
+.my_skills .skill h2{
+color: #595e5e;
+    padding: 0px;
+    margin: 0px;
+}
+.my_skills .skill p{
+line-height: 1.5;
+    text-transform: none;
+    font-size: 15px;
+    color: #aaaaaa;
+}
+
+.my_skills .skill button{
+background: none;
+    outline: none;
+    border: 2px solid #17e271;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    color: #fff;
+}
+.my_skills .skill button a{
+text-decoration: none;
+    color: #17e271;
+}
+
+.my_skills .progress{
+
+}
+.my_skills .progress .tech{
+
+}
+.my_skills .progress .tech h3{
+    color: #595e5e;
+    padding: 0px;
+    margin: 0px;
+
+}
+.my_skills .progress .tech div{
+    height: 30px;
+    background: #f2f2f2;
+    margin: 15px 0px;
+    border-radius: 10px;
+}
+.my_skills .progress .tech div span{
+color: #f2f2f2;
+    border-radius: 10px;
+    display: block;
+    background: #17e271;
+    height: 100%;
+    text-align: right;
+    padding-right: 12px;
+    padding-top: 5px;
+}
+.my_skills .progress .tech1 span{
+    animation:prog1 3s ease 0s 1 normal forwards;
+}
+.my_skills .progress .tech2 span{
+    animation:prog2 3s ease 0s 1 normal forwards;
+}
+.my_skills .progress .tech3 span{
+    animation:prog3 3s ease 0s 1 normal forwards;
+}
+.my_skills .progress .tech4 span{
+    animation:prog4 3s ease 0s 1 normal forwards;
+}
+
+
+@keyframes prog1{
+0%{
+    width: 0px;
+}
+100%{
+    width: 30%;
+}
+}
+@keyframes prog2{
+0%{
+    width: 0px;
+}
+100%{
+    width: 50%;
+}
+}
+@keyframes prog3{
+0%{
+    width: 0px;
+}
+100%{
+    width: 90%;
+}
+}
+@keyframes prog4{
+0%{
+    width: 0px;
+}
+100%{
+    width: 85%;
+}
+}
+/* end my skills */
+/* start resume */
+.resume{
+padding: 60px 0px;
+    background: #f2f2f2;
+}
+.resume .container{
+
+}
+.resume .contant::before{
+    left: calc(50% - 27px);
+    bottom: -112px;
+    position: absolute;
+    content: "";
+    border-width: 27px;
+    border-style: solid;
+    border-color: #f2f2f2 transparent transparent transparent;
+}
+
+.resume .contant{
+position: relative;
+text-align: center;
+}
+.resume .contant h2{
+color: #595e5e;
+    padding: 0px;
+    margin: 0px;
+}
+.resume .contant p{
+margin: 40px 0px;
+    line-height: 1.5;
+    text-transform: none;
+    font-size: 15px;
+    color: #aaaaaa;
+}
+
+.resume .contant button{
+    background: none;
+    outline: none;
+    border: 2px solid #17e271;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    color: #fff;
+
+}
+.resume .contant button a{
+text-decoration: none;
+    color: #17e271;
+}
+
+
+/* end resume */
+
+////////////////////////////////
+/* Start education and work */
+.education_and_work{
+
+}
+.education_and_work .container{
+    padding: 60px 0px;
+}
+.education_and_work .education{
+    column-count: 2;
+}
+.education_and_work .education .text{
+    margin-bottom: 445px;
+}
+.education_and_work .education h2{
+    column-span: all;
+    color: #595e5e;
+    padding: 0px;
+    margin-bottom: 41px;
+}
+.education_and_work .education .text p{
+    margin-top: 0px;
+    line-height: 1.5;
+    text-transform: none;
+    font-size: 15px;
+    color: #aaaaaa;
+    margin-bottom: 45px;
+
+}
+.education_and_work .education .cources{
+
+
+}
+.education_and_work .education .cources .cour{
+    margin-bottom: 55px;
+}
+.education_and_work .education .cources .cour h3{
+    color: #595e5e;
+    padding: 0px;
+}
+.education_and_work .education .cources .cour p{
+    margin-top: 0px;
+    line-height: 1.5;
+    text-transform: none;
+    font-size: 15px;
+    color: #aaaaaa;
+    margin-bottom: 15px;
+}
+.education_and_work .education .cources .cour p span{
+    text-transform: none;
+    font-size: 15px;
+    font-weight: 600;
+    background: none;
+    margin: 0;
+    display: inline;
+}
+.education_and_work .education .cources .cour span{
+    background: #2dce7e;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    display: block;
+    width: 70px;
+}
+
+/* End education and work */
